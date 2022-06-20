@@ -1,0 +1,133 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:hsl(216, 12%, 8%);  
+    color: white;
+    max-height: 100vh;
+}
+.grid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+ 
+}
+
+.rating-body{
+    padding: 30px;
+ width:400px ;
+ background-color:  hsl(213, 19%, 18%);
+ height: 380px;
+ display: flex;
+ flex-direction: column;
+ border-radius: 25px;
+}
+
+.photo img{
+   background-color: hsl(214, 18%, 23%);
+   padding: 10px;
+   border-radius: 50%;
+   box-shadow: 0px 0px 1px rgba(0,0,0.1);
+    margin-bottom: 25px;
+} 
+
+.main-font{
+    color: white;
+    font-size: 22px;
+    margin-bottom: 8.5px;
+}
+
+.text{
+    margin-bottom: 22px;
+}
+.pagh{
+    font-size: 15px;
+    opacity: 0.65;
+}
+.select{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.select span{
+   background-color: hsl(214, 18%, 23%);
+ padding: 14px;
+ width: 40px;
+ height: 40px;
+ border-radius: 50%;
+ cursor: pointer;
+
+}
+.select span:hover{
+    background-color:  hsl(25, 97%, 53%);
+}
+
+button{
+    display: inline-block;
+  margin-top: 25px;
+  display: flex;
+  width: 100%;
+  border: none;
+  padding: 10px 0;
+  padding-left:150px ;
+  text-align: center;
+  color: white;
+  background-color: hsl(25, 97%, 53%);
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.select .active{
+    
+    background-color: hsl(216, 12%, 54%);
+}
+button:hover{
+    background-color: #fff;
+    color:  hsl(25, 97%, 53%);
+}
+
+.thank-you-img{
+    width: 140px;
+    height: 140px;
+}
+.thank-you-img{
+    margin: 20px 0;
+}
+.rating-bodys{
+   text-align: center;
+   padding: 40px;
+   width:400px ;
+   background-color:  hsl(213, 19%, 18%);
+   height: 380px;
+   display: flex;
+   flex-direction: column;
+   border-radius: 20px;
+   align-items: center;
+   display: none;
+}
+
+.close .rating-body{
+    display: none;
+}
+.close .rating-bodys{
+    display: block;
+}
+
+@media screen and (max-width: 375px){
+    .rating-bodys{
+        width: 270px;
+    }
+    .rating-body{
+        width: 270px;
+    }
+    button{
+        padding-left:90px;
+    }
+}
